@@ -15,6 +15,7 @@
 		F64D61FF22F4334B00315E19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64D61FE22F4334B00315E19 /* Assets.xcassets */; };
 		F64D620222F4334B00315E19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64D620022F4334B00315E19 /* LaunchScreen.storyboard */; };
 		F64D620D22F4334B00315E19 /* RxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D620C22F4334B00315E19 /* RxSwiftTests.swift */; };
+		F66BAD6B22F8135900AB3065 /* Publisher+Anonymous.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66BAD6A22F8135900AB3065 /* Publisher+Anonymous.swift */; };
 		F6C7F85E22F4406E0016721E /* CombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7F85D22F4406E0016721E /* CombineTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		F64D620822F4334B00315E19 /* SpeedTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64D620C22F4334B00315E19 /* RxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTests.swift; sourceTree = "<group>"; };
 		F64D620E22F4334B00315E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F66BAD6A22F8135900AB3065 /* Publisher+Anonymous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Anonymous.swift"; sourceTree = "<group>"; };
 		F6C7F85D22F4406E0016721E /* CombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F64D61F522F4334A00315E19 /* AppDelegate.swift */,
+				F66BAD6A22F8135900AB3065 /* Publisher+Anonymous.swift */,
 				F64D61F722F4334A00315E19 /* SceneDelegate.swift */,
 				F64D61F922F4334A00315E19 /* ViewController.swift */,
 				F64D61FB22F4334A00315E19 /* Main.storyboard */,
@@ -273,6 +276,7 @@
 			files = (
 				F64D61FA22F4334A00315E19 /* ViewController.swift in Sources */,
 				F64D61F622F4334A00315E19 /* AppDelegate.swift in Sources */,
+				F66BAD6B22F8135900AB3065 /* Publisher+Anonymous.swift in Sources */,
 				F64D61F822F4334A00315E19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

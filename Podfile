@@ -1,4 +1,4 @@
-workspace 'module.org'
+workspace 'SpeedTest'
 platform :ios, '9.0'
 project 'SpeedTest.xcodeproj'
 source 'https://github.com/CocoaPods/Specs.git'

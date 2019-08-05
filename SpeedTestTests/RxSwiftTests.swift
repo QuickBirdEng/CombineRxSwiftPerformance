@@ -13,12 +13,6 @@ let iterations = 10000
 
 class RxSwiftTests: XCTestCase {
     
-    override func setUp() {
-    }
-
-    override func tearDown() {
-    }
-
     func testPublishSubjectPumping() {
         measure {
             var sum = 0
@@ -92,7 +86,13 @@ class RxSwiftTests: XCTestCase {
         measure {
             var sum = 0
                         
-            let subscription = Observable.from((0 ..< iterations * 10).map { _ in 1 })
+            let subscription = Observable<Int>
+                .create { observer in
+                    for _ in 0 ..< iterations * 10 {
+                        observer.on(.next(1))
+                    }
+                    return Disposables.create()
+                }
                 .map { $0 }.filter { _ in true }
                 .map { $0 }.filter { _ in true }
                 .map { $0 }.filter { _ in true }
@@ -114,7 +114,13 @@ class RxSwiftTests: XCTestCase {
             var sum = 0
 
             for _ in 0 ..< iterations {
-                let subscription = Observable.just(1)
+                let subscription = Observable<Int>
+                    .create { observer in
+                        for _ in 0 ..< 1 {
+                            observer.on(.next(1))
+                        }
+                        return Disposables.create()
+                    }
                     .map { $0 }.filter { _ in true }
                     .map { $0 }.filter { _ in true }
                     .map { $0 }.filter { _ in true }
@@ -135,7 +141,8 @@ class RxSwiftTests: XCTestCase {
     func testFlatMapsPumping() {
         measure {
             var sum = 0
-            let subscription = Observable<Int>.create { observer in
+            let subscription = Observable<Int>
+                .create { observer in
                     for _ in 0 ..< iterations * 10 {
                         observer.on(.next(1))
                     }
@@ -247,7 +254,7 @@ class RxSwiftTests: XCTestCase {
             for _ in 0 ..< 6 {
                 last = Observable.combineLatest(Observable.just(1), Observable.just(1), Observable.just(1), last) { x, _, _ ,_ in x }
             }
-            
+
             let subscription = last
                 .subscribe(onNext: { x in
                     sum += x
@@ -279,7 +286,7 @@ class RxSwiftTests: XCTestCase {
                     .subscribe(onNext: { x in
                         sum += x
                     })
-                
+
                 subscription.dispose()
             }
 
