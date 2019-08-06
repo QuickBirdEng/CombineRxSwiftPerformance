@@ -7,6 +7,8 @@ The RxSwift performance benchmark tests are [the original ones used in the RxSwi
 
 As a summary Combine was faster in every test and on average 4,5x more performant than RxSwift. These statistics show every test-method and its results. Lower is better.
 
+*Important update:* As mentioned correctly these numbers are created with XCTests running in DEBUG mode. The differences seem not so critical in Release builds. We will update the statistics in the following hours.
+
 ## Test Results Summary
 
 **Test** | **RxSwift (ms)** | **Combine (ms)** | **Factor**
