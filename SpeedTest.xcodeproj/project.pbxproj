@@ -16,6 +16,7 @@
 		F64D620222F4334B00315E19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64D620022F4334B00315E19 /* LaunchScreen.storyboard */; };
 		F64D620D22F4334B00315E19 /* RxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D620C22F4334B00315E19 /* RxSwiftTests.swift */; };
 		F66BAD6B22F8135900AB3065 /* Publisher+Anonymous.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66BAD6A22F8135900AB3065 /* Publisher+Anonymous.swift */; };
+		F6796E8A22F9562C0009E85D /* Publisher+Anonymous.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66BAD6A22F8135900AB3065 /* Publisher+Anonymous.swift */; };
 		F6C7F85E22F4406E0016721E /* CombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7F85D22F4406E0016721E /* CombineTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,8 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				F64D61F522F4334A00315E19 /* AppDelegate.swift */,
-				F66BAD6A22F8135900AB3065 /* Publisher+Anonymous.swift */,
 				F64D61F722F4334A00315E19 /* SceneDelegate.swift */,
+				F66BAD6A22F8135900AB3065 /* Publisher+Anonymous.swift */,
 				F64D61F922F4334A00315E19 /* ViewController.swift */,
 				F64D61FB22F4334A00315E19 /* Main.storyboard */,
 				F64D61FE22F4334B00315E19 /* Assets.xcassets */,
@@ -286,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F64D620D22F4334B00315E19 /* RxSwiftTests.swift in Sources */,
+				F6796E8A22F9562C0009E85D /* Publisher+Anonymous.swift in Sources */,
 				F6C7F85E22F4406E0016721E /* CombineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

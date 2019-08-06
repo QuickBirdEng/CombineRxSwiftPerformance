@@ -8,7 +8,6 @@
 
 import XCTest
 import Combine
-@testable import SpeedTest
 
 class CombineTests: XCTestCase {
     
