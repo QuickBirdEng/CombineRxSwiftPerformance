@@ -1,13 +1,13 @@
 # Combine vs. RxSwift Performance Benchmark Test Suite 📊
 This project contains a benchmarking test suite for comparing the performance of the most commonly used components and operators in RxSwift and Combine. For a detailed comparison of RxSwift with Combine have a look at [our blog post](https://quickbirdstudios.com/blog/?p=831).
 
-The RxSwift performance benchmark tests are [the original ones used in the RxSwift project](https://github.com/ReactiveX/RxSwift/blob/master/Tests/Benchmarks/Benchmarks.swift). We removed the two tests from RxCocoa testing Drivers, since there is no equivalent in Combine. The Combine tests are 1:1 translated tests from the Rx test-suite and should, therefore, be easily comparable. 
+The RxSwift performance benchmark tests are [the original ones used in the RxSwift project](https://github.com/ReactiveX/RxSwift/blob/master/Tests/Benchmarks/Benchmarks.swift). We removed the two tests from RxCocoa testing Drivers, since there is no equivalent in Combine. The Combine tests are 1:1 translated tests from the Rx test-suite and should, therefore, be easily comparable.
+
+*Important update:* As mentioned correctly these numbers are created with XCTests running in DEBUG mode. The differences seem not so critical in Release builds. We will update the statistics in the following hours.
 
 ![](https://quickbirdstudios.com/files/benchmarks/all.png)
 
 As a summary Combine was faster in every test and on average 4,5x more performant than RxSwift. These statistics show every test-method and its results. Lower is better.
-
-*Important update:* As mentioned correctly these numbers are created with XCTests running in DEBUG mode. The differences seem not so critical in Release builds. We will update the statistics in the following hours.
 
 ## Test Results Summary
 
@@ -120,5 +120,4 @@ func testPublishSubjectPumping() {
 ### CombineLatestCreating
 
 ![](https://quickbirdstudios.com/files/benchmarks/11.png)
-
 
