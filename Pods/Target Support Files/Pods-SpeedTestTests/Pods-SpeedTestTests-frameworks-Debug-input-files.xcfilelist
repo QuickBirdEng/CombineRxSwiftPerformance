@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-SpeedTestTests/Pods-SpeedTestTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework
 ${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework

@@ -8,4 +8,5 @@ use_frameworks!
 target "SpeedTestTests" do
 project 'SpeedTest.xcodeproj'
 pod 'RxSwift', '~> 5.0'
+pod 'ReactiveSwift', :git => "https://github.com/ReactiveCocoa/ReactiveSwift.git", :tag => "6.1.0"
 end
