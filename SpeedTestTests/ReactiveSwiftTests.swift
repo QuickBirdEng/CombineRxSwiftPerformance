@@ -88,7 +88,6 @@ class ReactiveSwiftTests: XCTestCase {
                 for _ in 0 ..< iterations * 10 {
                     observer.send(value: 1)
                 }
-                observer.sendCompleted()
             }
             .map { $0 }.filter { _ in true }
             .map { $0 }.filter { _ in true }
@@ -115,7 +114,6 @@ class ReactiveSwiftTests: XCTestCase {
                     for _ in 0 ..< 1 {
                         observer.send(value: 1)
                     }
-                    observer.sendCompleted()
                 }
                 .map { $0 }.filter { _ in true }
                 .map { $0 }.filter { _ in true }
@@ -143,7 +141,6 @@ class ReactiveSwiftTests: XCTestCase {
                 for _ in 0 ..< iterations * 10 {
                     observer.send(value: 1)
                 }
-                observer.sendCompleted()
             }
             .flatMap(.merge) { x in SignalProducer(value: x) }
             .flatMap(.merge) { x in SignalProducer(value: x) }
@@ -171,7 +168,6 @@ class ReactiveSwiftTests: XCTestCase {
                     for _ in 0 ..< 1 {
                         observer.send(value: 1)
                     }
-                    observer.sendCompleted()
                 }
                 .flatMap(.merge) { x in SignalProducer(value: x) }
                 .flatMap(.merge) { x in SignalProducer(value: x) }
@@ -199,7 +195,6 @@ class ReactiveSwiftTests: XCTestCase {
                 for _ in 0 ..< iterations * 10 {
                     observer.send(value: 1)
                 }
-                observer.sendCompleted()
             }
             .flatMap(.latest) { x in SignalProducer(value: x) }
             .flatMap(.latest) { x in SignalProducer(value: x) }
@@ -226,7 +221,6 @@ class ReactiveSwiftTests: XCTestCase {
                     for _ in 0 ..< 1 {
                         observer.send(value: 1)
                     }
-                    observer.sendCompleted()
                 }
                 .flatMap(.latest) { x in SignalProducer(value: x) }
                 .flatMap(.latest) { x in SignalProducer(value: x) }
@@ -254,7 +248,6 @@ class ReactiveSwiftTests: XCTestCase {
                     for _ in 0 ..< iterations * 10 {
                         observer.send(value: 1)
                     }
-                    observer.sendCompleted()
             })
                 .map { x, _, _ ,_ in x }
             
@@ -284,7 +277,6 @@ class ReactiveSwiftTests: XCTestCase {
                         for _ in 0 ..< 1 {
                             observer.send(value: 1)
                         }
-                        observer.sendCompleted()
                 })
                     .map { x, _, _ ,_ in x }
                 
