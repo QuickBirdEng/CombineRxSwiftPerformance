@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69D4373B22FC5B11008233B9 /* ReactiveSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4373A22FC5B11008233B9 /* ReactiveSwiftTests.swift */; };
 		B919F6FA2FD596D7C43C33D1 /* Pods_SpeedTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8730AB70E2662A0E106CC /* Pods_SpeedTestTests.framework */; };
 		F64D61F622F4334A00315E19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D61F522F4334A00315E19 /* AppDelegate.swift */; };
 		F64D61F822F4334A00315E19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D61F722F4334A00315E19 /* SceneDelegate.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		01C790B0CCF8F5785B4C5466 /* Pods-SpeedTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeedTestTests.release.xcconfig"; path = "Target Support Files/Pods-SpeedTestTests/Pods-SpeedTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		69D4373A22FC5B11008233B9 /* ReactiveSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveSwiftTests.swift; sourceTree = "<group>"; };
 		71D841E05F10EEEF73ACE790 /* Pods-SpeedTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeedTestTests.debug.xcconfig"; path = "Target Support Files/Pods-SpeedTestTests/Pods-SpeedTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3B8730AB70E2662A0E106CC /* Pods_SpeedTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeedTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64D61F222F4334A00315E19 /* SpeedTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,8 +125,9 @@
 		F64D620B22F4334B00315E19 /* SpeedTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				F64D620C22F4334B00315E19 /* RxSwiftTests.swift */,
 				F6C7F85D22F4406E0016721E /* CombineTests.swift */,
+				69D4373A22FC5B11008233B9 /* ReactiveSwiftTests.swift */,
+				F64D620C22F4334B00315E19 /* RxSwiftTests.swift */,
 				F64D620E22F4334B00315E19 /* Info.plist */,
 			);
 			path = SpeedTestTests;
@@ -288,6 +291,7 @@
 			files = (
 				F64D620D22F4334B00315E19 /* RxSwiftTests.swift in Sources */,
 				F6796E8A22F9562C0009E85D /* Publisher+Anonymous.swift in Sources */,
+				69D4373B22FC5B11008233B9 /* ReactiveSwiftTests.swift in Sources */,
 				F6C7F85E22F4406E0016721E /* CombineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

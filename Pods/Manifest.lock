@@ -1,16 +1,29 @@
 PODS:
+  - ReactiveSwift (6.1.0)
   - RxSwift (5.0.0)
 
 DEPENDENCIES:
+  - ReactiveSwift (from `https://github.com/ReactiveCocoa/ReactiveSwift.git`, tag `6.1.0`)
   - RxSwift (~> 5.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - RxSwift
 
+EXTERNAL SOURCES:
+  ReactiveSwift:
+    :git: https://github.com/ReactiveCocoa/ReactiveSwift.git
+    :tag: 6.1.0
+
+CHECKOUT OPTIONS:
+  ReactiveSwift:
+    :git: https://github.com/ReactiveCocoa/ReactiveSwift.git
+    :tag: 6.1.0
+
 SPEC CHECKSUMS:
+  ReactiveSwift: b78c7259f8ca46368238c895ae33a6a3bf9f811c
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
-PODFILE CHECKSUM: 5949c781af362f5f03ac55c374eace20756b40d7
+PODFILE CHECKSUM: 4f7b6d260f9fbe88c1ff1f4f9a5f081e9570610c
 
-COCOAPODS: 1.7.0.rc.1
+COCOAPODS: 1.7.5
