@@ -11,6 +11,12 @@ As a summary Combine was faster in every test and on average 41% more performant
 
 ## Test Results Summary
 
+### Testing Details #1
+
+**Machine**: MacBook Pro 2018, 2,7 GHz Intel Core i7, 16 GB
+**IDE**: Xcode 11.0 beta 5 (11M382q)
+**Testing Device**: iPhone XR Simulator
+
 **Test** | **RxSwift (ms)** | **Combine (ms)** | **Factor**
 --- | --- | --- | ---
 **PublishSubjectPumping** | 227 | 135 | 168%
@@ -25,10 +31,25 @@ As a summary Combine was faster in every test and on average 41% more performant
 **CombineLatestPumping** | 298 | 282 | 106%
 **CombineLatestCreating** | 644 | 467 | 138%
 
-### Testing Details
-**Machine**: MacBook Pro 2018, 2,7 GHz Intel Core i7, 16 GB
-**IDE**: Xcode 11.0 beta 5 (11M382q)
-**Testing Device**: iPhone XR Simulator
+### Testing Details #2
+
+**IDE**: Xcode 15.0 beta 8 (15A5229m)
+**Testing Device**: iPhone 7 Plus, iOS 15.7.8
+**RxSwift Version: 6.5.0**
+
+**Test** | **RxSwift (ms)** | **Combine (ms)** | **Factor**
+--- | --- | --- | ---
+**PublishSubjectPumping** | 830 | 224 | 370%
+**PublishSubjectPumpingTwoSubscriptions** | 1198 | 940 | 127%
+**PublishSubjectCreating** | 428 | 386 | 11%
+**MapFilterPumping** | 217 | 15 | 1446%
+**MapFilterCreating** |223 | 165 | 135%
+**FlatMapsPumping** | 983 | 718 | 137%
+**FlatMapsCreating** | 290 | 233 | 124%
+**FlatMapLatestPumping** | 1027 | 653 | 157%
+**FlatMapLatestCreating** | 299 | 222 | 135%
+**CombineLatestPumping** | 449 | 474 | 94%
+**CombineLatestCreating** | 686 | 740 | 93%
 
 ## Performance Test Example: PublishSubject Pumping
 
